@@ -1,21 +1,326 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ピカと行く！カミオカンデツアー</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+      line-height: 1.8;
+      color: #1f2937;
+      background: #f7fafc;
+    }
+    header {
+      background: linear-gradient(135deg, #07172f, #123c69);
+      color: white;
+      padding: 64px 20px 48px;
+      text-align: center;
+    }
+    header .label {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-size: 32px;
+      line-height: 1.35;
+      margin: 0 0 16px;
+    }
+    header p {
+      max-width: 760px;
+      margin: 0 auto 24px;
+      font-size: 18px;
+    }
+    .cta {
+      display: inline-block;
+      background: #facc15;
+      color: #111827;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 14px 24px;
+      border-radius: 999px;
+      margin-top: 12px;
+    }
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 32px 18px 64px;
+    }
+    section {
+      background: white;
+      border-radius: 18px;
+      padding: 28px;
+      margin-bottom: 22px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    }
+    h2 {
+      font-size: 24px;
+      margin-top: 0;
+      border-left: 6px solid #2563eb;
+      padding-left: 12px;
+    }
+    h3 {
+      margin-bottom: 6px;
+      color: #123c69;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+    }
+    .card {
+      background: #f1f5f9;
+      padding: 16px;
+      border-radius: 14px;
+    }
+    .price {
+      font-size: 22px;
+      font-weight: bold;
+      color: #dc2626;
+    }
+    ul {
+      padding-left: 1.2em;
+    }
+    .schedule {
+      border-left: 3px solid #93c5fd;
+      padding-left: 16px;
+    }
+    .note {
+      background: #fff7ed;
+      border: 1px solid #fed7aa;
+      padding: 14px;
+      border-radius: 12px;
+    }
+    .links a {
+      display: inline-block;
+      margin: 6px 8px 6px 0;
+      color: #2563eb;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      color: #64748b;
+      padding: 32px 16px;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 26px; }
+      header p { font-size: 16px; }
+      section { padding: 22px; }
+    }
+  </style>
 </head>
 <body>
 
-<h1>ピカと行く！カミオカンデツアー</h1>
+<header>
+  <div class="label">親子向け・抽選制ツアー</div>
+  <h1>ピカと行く！<br>カミオカンデツアー</h1>
+  <p>岐阜県神岡の地下1000m。普段は入れない鉱山の坑道を歩きながら、宇宙の謎に迫る大冒険へ！</p>
+  <a class="cta" href="#apply">申込みについて見る</a>
+</header>
 
-<p>
-地下1000mの世界へ！
-</p>
+<div class="container">
 
-<p>
-このサイトはテスト公開中です。
-</p>
+<section>
+  <h2>このツアーについて</h2>
+  <p>
+    みなさんこんにちは、ピカです！
+  </p>
+  <p>
+    今回の目的地は、ニュートリノ研究でノーベル賞につながった世界的研究施設「スーパーカミオカンデ」。
+    日本を代表する巨大実験施設を、親子で見学します。
+  </p>
+  <p>
+    僕自身、大学院時代は素粒子物理学を研究していました。
+    今回は施設を見るだけではなく、ピカのニュートリノのオンライン授業付きで、楽しく、わかりやすくお届けします！
+  </p>
+</section>
+
+<section>
+  <h2>開催概要</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>開催日</h3>
+      <p>7月18日(土)〜19日(日)</p>
+    </div>
+    <div class="card">
+      <h3>集合</h3>
+      <p>9:45<br>アパホテル富山駅前南 前</p>
+    </div>
+    <div class="card">
+      <h3>定員</h3>
+      <p>20名<br>※抽選制</p>
+    </div>
+    <div class="card">
+      <h3>推奨年齢</h3>
+      <p>小学4年生以上<br>※お子様のみの参加不可</p>
+    </div>
+  </div>
+  <p class="note">
+    申込締切：6月19日(金) 23:59<br>
+    現在30家族ほどから興味ありとのご連絡をいただいているため、今回は抽選制とさせていただきます。
+  </p>
+</section>
+
+<section>
+  <h2>参加費</h2>
+  <p class="price">大人 45,000円 ／ 子ども 40,000円</p>
+  <p>以下の費用を含みます。</p>
+  <ul>
+    <li>1日目貸切バス代</li>
+    <li>スーパーカミオカンデ見学（GSA）参加費</li>
+    <li>宿泊費（1泊）</li>
+    <li>夕食代・朝食代</li>
+    <li>2日目交通費</li>
+    <li>富山市科学博物館、富岩水上ライン乗船など各種チケット</li>
+    <li>レクリエーション保険</li>
+    <li>ピカのニュートリノオンライン授業</li>
+  </ul>
+  <p>※富山駅までの交通費、1日目・2日目の昼食代は含まれません。</p>
+  <p>※中学生以上は大人料金となります。参加費のお支払い方法は、参加者決定後にご案内します。</p>
+</section>
+
+<section>
+  <h2>主な見学先</h2>
+
+  <h3>スーパーカミオカンデ</h3>
+  <p>
+    岐阜県神岡町の地下1000mにある世界最大級のニュートリノ観測施設です。
+    太陽や宇宙の果てから飛んでくる「ニュートリノ」を観測し、宇宙の成り立ちや星の爆発の秘密に迫る、まさに地底の宇宙研究所です。
+  </p>
+
+  <h3>GSA（ジオスペースアドベンチャー）</h3>
+  <p>
+    神岡鉱山の本物の坑道やスーパーカミオカンデを見学できる特別イベントです。
+    普段は入ることのできない地下の世界を実際に歩きながら、研究施設のスケールを体感します。
+  </p>
+  <p>※スーパーカミオカンデの装置の上までは行けますが、内部を見学することはできません。</p>
+
+  <h3>ひだ宇宙科学館 カミオカラボ</h3>
+  <p>
+    スーパーカミオカンデやニュートリノについて楽しく学べる施設です。
+    併設の道の駅で昼食やお土産を見る予定です。
+  </p>
+
+  <h3>富山市科学博物館</h3>
+  <p>
+    館内には体験型の展示があります。特に面白いと思った展示を、ピカがピックアップしてご案内します。
+  </p>
+
+  <h3>富岩運河環水公園・富岩水上ライン</h3>
+  <p>
+    富山を代表する美しい公園です。水上ラインでは、船ごと水のエレベーターに乗るような「閘門」体験もできます。
+  </p>
+</section>
+
+<section>
+  <h2>ざっくり予定表</h2>
+
+  <h3>7月18日(土)</h3>
+  <div class="schedule">
+    <p>9:45　アパホテル富山駅前南 集合</p>
+    <p>10:00　貸切バス出発</p>
+    <p>11:15　道の駅 宙ドーム・神岡 着</p>
+    <p>11:30　昼食・お土産</p>
+    <p>12:20　ひだ宇宙科学館 カミオカラボ 見学</p>
+    <p>13:30　神岡町コミュニティセンター 集合受付</p>
+    <p>14:00　カミオカンデ見学</p>
+    <p>17:30　ツアー終了</p>
+    <p>19:00　夕食</p>
+    <p>20:00　アパホテル富山駅前南 着</p>
+  </div>
+
+  <h3>7月19日(日)</h3>
+  <div class="schedule">
+    <p>6:30〜9:30　朝食</p>
+    <p>8:15　ホテルフロント集合</p>
+    <p>8:30　出発</p>
+    <p>9:00　富山市科学博物館</p>
+    <p>11:00　富山市役所 展望塔（状況により判断）</p>
+    <p>11:30　昼食・自由時間</p>
+    <p>13:30　富岩運河環水公園 オノマトペ公園 集合</p>
+    <p>13:55　富岩水上ライン乗り場 集合</p>
+    <p>14:10　富岩水上ライン開始</p>
+    <p>15:30　天門橋で集合写真</p>
+    <p>16:00　解散</p>
+  </div>
+  <p>※予定は変更になる可能性があります。</p>
+</section>
+
+<section>
+  <h2>オンライン授業</h2>
+  <p>
+    ツアー前に、ピカのニュートリノ編オンライン授業を別日で開催します。
+  </p>
+  <ul>
+    <li>日時：7月12日(日) 19:00〜20:00</li>
+    <li>リアルタイムで参加できない場合も、アーカイブ視聴できます</li>
+    <li>オンライン授業のみの申込みも可能です</li>
+  </ul>
+</section>
+
+<section>
+  <h2>持ち物・注意事項</h2>
+  <ul>
+    <li>カミオカンデツアーでは、懐中電灯・冬用上着・スニーカー等をご持参ください。</li>
+    <li>坑内は気温13℃程度で、約3時間歩きます。</li>
+    <li>長時間の歩行に支障のない方を対象としています。</li>
+    <li>最高気温35℃近くになる可能性があります。熱中症対策をお願いします。</li>
+    <li>ホテルはダブルベッド、1部屋の定員が2人です。3人家族は2部屋に分かれます。</li>
+    <li>参加者決定後は、連絡のためLINEオープンチャットに入っていただきます。</li>
+  </ul>
+</section>
+
+<section>
+  <h2>キャンセルについて</h2>
+  <ul>
+    <li>21日前まで：無料</li>
+    <li>20〜8日前：25%</li>
+    <li>7日前以降：50%</li>
+    <li>前日以降：100%</li>
+  </ul>
+  <p>
+    体調不良や発熱を含め、参加者都合のキャンセルは所定のキャンセル料が発生します。
+    台風等の荒天や交通機関の運休などにより安全な催行が困難と判断した場合は、主催者判断で中止または内容変更を行います。
+  </p>
+  <p>
+    主催者判断による中止の場合は、既に発生している実費を差し引いた金額を返金します。
+    振込手数料が生じた場合には、返金額より差し引かせていただきます。
+  </p>
+</section>
+
+<section id="apply">
+  <h2>申込み・お問い合わせ</h2>
+  <p>
+    申込みフォームは準備中です。完成次第、こちらに掲載します。
+  </p>
+  <p>
+    質問等は公式LINEよりお問い合わせください。
+  </p>
+  <p>
+    <a class="cta" href="https://line.me/R/ti/p/@191vmuku">公式LINEで問い合わせる</a>
+  </p>
+</section>
+
+<section>
+  <h2>SNS</h2>
+  <div class="links">
+    <a href="https://line.me/R/ti/p/@191vmuku">公式LINE</a>
+    <a href="https://x.com/PikataroWorldT">X</a>
+    <a href="https://www.instagram.com/pikataro330/">Instagram</a>
+    <a href="https://www.youtube.com/@pika.teacher/videos">YouTube</a>
+  </div>
+</section>
+
+</div>
+
+<footer>
+  <p>ピカと行く！カミオカンデツアー</p>
+</footer>
 
 </body>
 </html>
